@@ -1,3 +1,3 @@
-FROM golang:1.10
+FROM golang:1.17rc2
 
 RUN apt-get update && apt-get install -y imagemagick graphviz
