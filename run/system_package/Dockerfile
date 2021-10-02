@@ -26,7 +26,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -v -o graphviz-web
 # Use a Docker multi-stage build to create a lean production image.
 # https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds
 # https://hub.docker.com/_/alpine
-FROM ubuntu
+FROM ubuntu:20.04
 
 # [START run_system_package_ubuntu]
 RUN apt-get update -y && apt-get install -y \
